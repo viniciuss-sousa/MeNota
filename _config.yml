@@ -1,0 +1,42 @@
+# Configuração Básica do Jekyll
+title: Me nota
+description: "Descrição do meu site"
+baseurl: "MeNota"  # Para o GitHub Pages, use o nome do repositório se não for a raiz
+url: "https://viniciuss-sousa.github.io"  # Altere para o seu domínio ou URL do GitHub Pages
+
+# Defina o layout padrão
+theme: jekyll-theme-primer  # Ou qualquer outro tema que você esteja usando
+
+# Configuração de Layout
+layout: post  # Usado nos arquivos markdown dos posts
+
+# Configuração de Posts
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-paginate
+
+# Outras Configurações
+markdown: kramdown  # Usar kramdown para renderizar markdown
+permalink: /:year/:month/:day/:title.html  # Formato de URL para postagens
+
+# Configuração de SEO e Metadados
+seo:
+  enabled: true
+  description: "Uma breve descrição sobre o site"
+  author: "Vinicius"
+
+# Configurações de Build
+exclude:
+  - README.md  # Excluir arquivos não necessários para o build
+
+# GitHub Pages Configurações
+github:
+  repository: "MeNota/MeNota-main"  # Substitua pelo seu repositório
+  branch: "main"  # Se você estiver usando a branch principal
