@@ -38,5 +38,5 @@ exclude:
 
 # GitHub Pages Configurações
 github:
-  repository: "MeNota/MeNota-main"  # Substitua pelo seu repositório
+  repository: "MeNota/MeNota"  # Substitua pelo seu repositório
   branch: "main"  # Se você estiver usando a branch principal
